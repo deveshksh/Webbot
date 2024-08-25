@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { type Message as TMessage } from "ai/react";
 import { Message } from "./Message";
 
@@ -14,12 +15,17 @@ export const Messages = ({ messages }: MessagesProps) => {
         ))
       ) : (
         <div className="flex-1 flex flex-col items-center justify-center gap-2">
-          <img src="/assets/webbot_header.svg" alt="Webbot Logo" className="w-1000 h-2000" />
+          <Image 
+            src="/assets/webbot_header.svg" 
+            alt="Webbot Logo" 
+            width={1000}  // Adjust the width accordingly
+            height={2000} // Adjust the height accordingly
+            className="w-1000 h-2000"
+          />
           <h3 className="font-semibold text-xl text-white">Welcome to Webbot!</h3>
-          <p className="text-zinc-500 text-sm">You're all set!</p>
+          <p className="text-zinc-500 text-sm">You&apos;re all set!</p>
         </div>
       )}
     </div>
   );
 };
-
