@@ -22,7 +22,7 @@ export const Messages = ({ messages }: MessagesProps) => {
             height={2000} // Adjust the height accordingly
             className="w-1000 h-2000"
           />
-          <h3 className="font-semibold text-xl text-white">Welcome to Webbot!</h3>
+          <h3 className="font-semibold text-xl text-white">Welcome to Webbot App!</h3>
           <p className="text-zinc-500 text-sm">You&apos;re all set!</p>
         </div>
       )}
